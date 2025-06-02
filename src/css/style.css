@@ -12,6 +12,7 @@ header{
     position: fixed;  
     width: 100%;
     transition: color 0.3s;
+    z-index: 1000; 
 }
 header > h1{
     font-size: 50px;
@@ -65,8 +66,10 @@ nav ul :hover {
   background-position: center;
   width: 100%;
   height: 100vh;
-  padding-top: 100px; /* compensar o header fixo */
+  padding-top: 100px; 
   gap: 20px;
+  
+  
 }
 
 #banner h1 {
@@ -87,38 +90,72 @@ nav ul :hover {
     color: white;
     transition: background-color 0.3s;
 }
+html{
+     user-select: none;
+}
 #botao:hover{
     background: rgb(211, 4, 4);
     
 }
+main{
+    background: rgb(200, 207, 207);
+}
+
+
+#section1{
+    margin: 50px;
+    border: 2px solid gray;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    padding: auto;
+    background: whitesmoke
+}
 
 #titulo1{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   padding: 40px;
-   font-size: 50px;
-}
-#conteudo1{
+    font-size: 45px;
+    padding: 30px;
+    margin-top: 20px;
+    left: 40px;
     display: flex;
-    align-items: start;
-    gap: 50px;
-    padding: 20px;
-    border: 4px solid #ddd;    
     justify-content: center;
-    width: 80%;
-    margin: 0 auto;
-
 }
 
+.card {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.6s ease-out;
+}
+
+.card.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#conteudo1{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 30px;
+    margin: 0 40px;
+    gap: 30px;
+
+    
+}
 #conteudo1 > img{
-    width: 600px;
-    height: 400px;
+    width: 400px;
     border: 2px solid black;
-    border-radius: 10px;
+}
+
+#listra :hover{
+    background: rgb(65, 64, 64); 
 
 }
-#conteudo1 > figcaption{
-    max-width: 500px;
-    font-size: 20px;
+
+#listra{
+    width: 10px;
+    height: 60px;
+    background: rgb(168, 22, 22);
+    position: relative;
+    top: 15px;
+    right: 20px;
+    
 }
