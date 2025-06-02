@@ -102,7 +102,7 @@ main{
 }
 
 
-#section1{
+.section1{
     margin: 50px;
     border: 2px solid gray;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -110,7 +110,7 @@ main{
     background: whitesmoke
 }
 
-#titulo1{
+.titulo1{
     font-size: 45px;
     padding: 30px;
     margin-top: 20px;
@@ -145,12 +145,8 @@ main{
     border: 2px solid black;
 }
 
-#listra :hover{
-    background: rgb(65, 64, 64); 
 
-}
-
-#listra{
+.listra{
     width: 10px;
     height: 60px;
     background: rgb(168, 22, 22);
