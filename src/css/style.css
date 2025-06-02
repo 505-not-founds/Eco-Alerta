@@ -9,6 +9,9 @@ header{
     justify-content: space-between;
     padding: 20px;
     border-bottom: 2px black;
+    position: fixed;  
+    width: 100%;
+    transition: color 0.3s;
 }
 header > h1{
     font-size: 50px;
@@ -39,6 +42,10 @@ nav ul li a{
 #cadastro{
     background: red;
 }
+.logo{
+    padding-bottom: 15px;
+  
+}
 
 nav ul :hover {
     transform: translateY(-5px);
@@ -46,3 +53,41 @@ nav ul :hover {
     color: white;
 }
 
+#banner {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../assets/Logo\ Eco\ alerta.avif");
+  background-repeat: no-repeat; 
+  background-size: cover;     
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  padding-top: 100px; /* compensar o header fixo */
+  gap: 20px;
+}
+
+#banner h1 {
+  font-size: 40px;
+  color: white;
+}
+
+#banner p {
+  font-size: 20px;
+  color: white;
+}
+
+#botao{
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: red;
+    color: white;
+    transition: background-color 0.3s;
+}
+#botao:hover{
+    background: rgb(211, 4, 4);
+    
+}
