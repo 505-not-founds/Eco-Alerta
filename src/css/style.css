@@ -175,6 +175,49 @@ main{
     width: 45%;    
 }
 
+footer{
+    background: rgb(37, 37, 39);
+    min-height: 20vh;
+    margin-top: 100px;
+}
+
+
+
+
+#footer-content{
+    background: rgb(44, 44, 49);
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding-top: 30px;
+    min-height: 15vh;
+
+}
+
+#contato{
+    display: flex ;
+    flex-direction: column;
+}
+
+.bloco {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+  margin-bottom: 10px;
+}
+
+.bloco img {
+  width: 24px; 
+  height: auto;
+}
+
+#direitos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color:white ;
+}
 
 
 
