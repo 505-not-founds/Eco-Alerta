@@ -112,6 +112,11 @@ strong{
 
 .termos {
     font-size: 14px;
+    padding: 10px;
+}
+.termos > p{
+    position: relative;
+    right: 10px;
 }
 
 
