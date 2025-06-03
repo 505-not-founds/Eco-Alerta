@@ -65,7 +65,7 @@ nav ul :hover {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-image: url("../assets/Logo\ Eco\ alerta.avif");
+  background-image: url("../assets/enchente.webp");
   background-repeat: no-repeat; 
   background-size: cover;     
   background-position: center;
@@ -216,7 +216,7 @@ footer{
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    color:white ;
+    color:whi ;
 }
 
 
