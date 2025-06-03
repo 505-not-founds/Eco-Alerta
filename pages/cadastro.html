@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/cadastro.css">
+    <title>Cadastro</title>
+</head>
+<body>
+
+    <header>
+        <h1 id="titulo">Eco alerta</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html"> home</a></li>
+                <li><a href="#"> Sobre</a></li>
+                <li><a href="#"> Formulario</a></li>
+                <li><a href="#"> Contato</a></li>
+
+                <li><a href="#" id="cadastro"> Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="cadastro1">
+            <div id="titulo1">
+                <h1>cadastro</h1>
+            </div>
+            <div id="conteudo">
+                <p>Vamos realizar seu cadastro,precisamos apenas de algumas informações:</p>
+                <p> <strong>informação pessoais</strong></p>
+
+                
+                <form id="contatos">
+                    
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email de contato" required>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 91234-5678" required>
+
+                    <label for="cidade">Cidade:</label>
+                    <input type="text" id="cidade" name="cidade" placeholder="São Paulo" required>
+
+                    <div id="btn">
+
+                        <label class="termos">
+                            <input type="checkbox" required >
+                            <p>Eu concordo em receber mensagens pelo telegram</p>
+                        </label>
+                        
+                        <button type="submit">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </section>
+
+
+    </main>
+    
+</body>
+</html>
