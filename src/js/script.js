@@ -14,3 +14,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cards.forEach(card => observer.observe(card));
 });
+
+// carregamento
+
+ const imagens = [
+    'src/assets/enchente.webp',
+    'src/assets/enchente3.jpg',
+    'src/assets/enchente4.jpg',
+    'src/assets/enchente2.avif'
+  ];
+
+  let i = 0;
+  const tempo = 10000;
+
+  function slideShowBanner() {
+    const banner = document.getElementById('banner');
+    if (!banner) return;
+
+    banner.style.backgroundImage = `url(${imagens[i]})`;
+    i = (i + 1) % imagens.length;
+
+    setTimeout(slideShowBanner, tempo);
+  }
+
+  window.onload = slideShowBanner;
