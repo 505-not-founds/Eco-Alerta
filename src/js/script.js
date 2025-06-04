@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
   ];
 
   let i = 0;
-  const tempo = 10000;
+  const tempo = 100000;
 
   function slideShowBanner() {
     const banner = document.getElementById('banner');
