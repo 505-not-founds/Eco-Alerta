@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor-primaria: white;
+    --sombra-letra:  1px 1px 1px black;
+    --tipo-letra: "Roboto Condensed", sans-serif;
+    --sombra-box: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
 html, body {
     overflow-x: hidden; 
 }
@@ -20,7 +28,7 @@ header{
 }
 header > h1{
     font-size: 50px;
-    color: white;
+    color: var(--cor-primaria);
 }
 
 nav ul{
@@ -72,8 +80,12 @@ html{
    
 }
 
+#contato > p{
+    font-family: var(--tipo-letra);
+}
 #contato > h2{
     font-size: 25px;
+    font-family: var(--tipo-letra);
 
 }
 
@@ -85,7 +97,8 @@ html{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    color: white;
+    color: var(--cor-primaria);
+    font-family: var(--tipo-letra);
     
 }
 
@@ -96,6 +109,7 @@ html{
     flex-direction: column;
     padding: 10px;
     gap: 10px;
+    
     
 }
 
@@ -122,6 +136,7 @@ html{
   display: flex;
   justify-content: center;
   width: 100%;
+
 }
 
 #texto > textarea {
@@ -143,7 +158,11 @@ html{
     padding: 10px 30px;
     border-radius: 10px;
     background: red;
-    color: white;
+    color: var(--cor-primaria);
+}
+
+#redes-socias >h2{
+    font-family: var(--tipo-letra);
 }
 
 @media (max-width: 768px) {

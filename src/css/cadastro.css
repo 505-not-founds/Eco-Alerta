@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor-primaria: white;
+    --sombra-letra:  1px 1px 1px black;
+    --tipo-letra: "Roboto Condensed", sans-serif;
+    --sombra-box: 0 8px 16px rgba(0, 0, 0, 0.3);
+    --background1:red;
+}
+
 html, body {
     overflow-x: hidden; 
     
@@ -23,7 +31,7 @@ header{
 }
 header > h1{
     font-size: 50px;
-    color: white;
+    color: var(--cor-primaria);
 }
 
 nav ul{
@@ -55,7 +63,7 @@ main{
 }
 
 #cadastro{
-    background: red;
+    background: var(--background1);
 }
 
 #cadastro1{
@@ -64,7 +72,7 @@ main{
 }
 
 #titulo1{
-    background: rgb(255, 0, 0);
+    background: var(--background1);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -72,10 +80,10 @@ main{
     max-width: 80vh;
     margin: auto;
     font-size: 20px;
-    color: white;
+    color: var(--cor-primaria);
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--sombra-box);
 
 }
 
@@ -93,9 +101,8 @@ strong{
     gap: 10px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: var(--sombra-box);
 }
-
 
 #contatos{
     display: flex;
@@ -138,9 +145,9 @@ strong{
 
 #contatos > #btn > button{
     padding: 10px 30px;
-    background: red;
+    background: var(--background1);
     border-radius: 10px;
-    color: #fff;
+    color: var(--cor-primaria);
 }
 
 
@@ -184,4 +191,3 @@ strong{
    
 
 }
-
