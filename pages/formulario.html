@@ -21,9 +21,44 @@
         </nav>
     </header>
 
-    <main>
-        <h1>1</h1>
+     <main id="container-quiz">
+
+        <div class="quiz">
+
+            <h1>Quiz Eco Alerta</h1>
+
+            <section id="container-perguntas">
+
+                <div id="container-titulo">
+                    <h2 id="pergunta"></h2>
+
+                </div>
+
+                <div id="container-resposta">
+                    <input type="text" id="resposta" placeholder="deigite sua resposta">
+                </div>
+
+                <div id="container-btn">
+                    <button id="proximo">Proxima pergunta</button>
+                    <p id="message"></p>
+                </div>
+
+            </section>
+
+            <section id="container-resultado" class="hidden">
+                <h2>Resultado do quiz</h2>
+                <ul id="lista-resultado"></ul>
+                <button id="inicio-btn">Reiniciar Quiz</button>
+
+            </section>
+
+        </div>
+
     </main>
+
+
+
+    <script src="../src/js/quiz.js"></script>
     
 </body>
 </html>
