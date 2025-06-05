@@ -55,6 +55,14 @@ nav ul li a{
     color: aqua;
     font-size: 20px;
 }
+
+
+nav ul :hover {
+    transform: translateY(-5px);
+    transition: transform 0.6s;
+    color: var( --cor-primaria);
+}
+
 main{
     background: rgb(200, 207, 207);
     min-height: 90vh;

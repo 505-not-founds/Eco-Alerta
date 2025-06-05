@@ -10,10 +10,16 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     //DECLARANDO O ARRAY DE PERGUNTAS
     const questoes=[
-        "pergunta1",
-        "2",
-        "3",
-        "4",
+        "1.Você já presenciou uma enchente na sua cidade ou bairro? ",
+        "2.Sua casa ou rua já foi afetada por enchentes?",
+        "3.você sabe a diferença entre enchentes e alagamentos?",
+        "4.você sabe os riscos  à saúde associados às enchentes? ",
+        "5.Já utilizou a tecnologia contra enchentes",
+        "6.Você conhece alguma ação da sua cidade para lidar com enchentes? ",
+        "7.Voce sabe o que deve ser feito durante uma enchente?",
+        "8.Você se sente seguro durante os períodos de muita chuva?",
+        "9.Você sabe se mora em uma área de risco de enchentes?",
+        "10.Você costuma receber alertas sobre enchentes pelo celular, rádio ou redes sociais?",
     ]
     //DECLARANDOS AS VARIAVEIS
     let perguntas = 0;

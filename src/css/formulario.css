@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --cor-primaria: white;
+    --sombra-letra:  1px 1px 1px black;
+    --tipo-letra: "Roboto Condensed", sans-serif;
+}
+
 html, body {
     overflow-x: hidden; 
 }
@@ -20,7 +26,7 @@ header{
 }
 header > h1{
     font-size: 50px;
-    color: white;
+    color: var(--cor-primaria);
 }
 
 nav ul{
@@ -53,6 +59,12 @@ html{
     background: red;
 }
 
+nav ul :hover {
+    transform: translateY(-5px);
+    transition: transform 0.6s;
+    color: var( --cor-primaria);
+}
+
 
 #container-quiz{
     display: flex;
@@ -66,10 +78,12 @@ html{
 .quiz{
     background: midnightblue;
     border: 2px solid black;
-    color: white;
+    color: var(--cor-primaria);
     padding: 50px;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    min-width: 80vh;
+    max-width: 90vh;
     
 }
 
@@ -82,7 +96,7 @@ html{
 #container-titulo{
     display: flex;
     justify-content: center;
-    font-size: 20px;
+    font-size: 15px;
     padding-bottom: 10px;
 }
 
@@ -98,6 +112,7 @@ html{
 #container-resposta{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 #container-resposta > input{
@@ -117,7 +132,7 @@ html{
 #container-btn > p {
     position: relative;
     right: 80px;
-    color: white;
+    color: var(--cor-primaria);
     padding-top: 10px;
 }
 
@@ -125,7 +140,7 @@ html{
     padding: 10px;
     border-radius: 10px;
     background: red;
-    color: white;
+    color: var(--cor-primaria);
 }
 
 #container-resultado{
@@ -140,11 +155,22 @@ html{
 
 }
 
+#lista-resultado{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
 
 
 @media screen and (max-width: 600px) {
   .quiz {
     padding: 20px;
+    min-width: 0;
   }
 
   .quiz > h1 {

@@ -122,12 +122,15 @@ main{
 }
 
 
+
+/* Todos os cards */
+
 .section1{
-    margin: 50px;
+    margin: 80px 50px;
     border: 2px solid gray;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
     padding: auto;
-    background: whitesmoke
+    background: whitesmoke;
 }
 
 .titulo1{
@@ -156,9 +159,9 @@ main{
     justify-content: space-evenly;
     font-size: 30px;
     margin: 0 40px;
-    gap: 30px;
+    gap: 50px;
     font-family: var(--tipo-letra);
-
+    
     
 }
 .conteudo1 > img{
@@ -175,6 +178,7 @@ main{
     right: 20px;
     
 }
+
 
 
 /* SEÇÃO 2 */
@@ -310,6 +314,10 @@ footer{
         gap: 10px;
     }
 
+    .section1{
+        margin: 100px 20px;
+    }
+
     .titulo1{
         font-size: 15px;
 
@@ -317,7 +325,29 @@ footer{
     .conteudo1{
         padding-bottom: 10px;
     }
+    .listra{
+        top: -10px;
+        right: 10px;
+        width: 8px;
+        height: 40px;
+    
 
+    }
+
+    #conteudo2 > #conteudo2-divisao1 > img{
+        width: 250px;
+    }
+
+    #conteudo2-divisao2-imagem img {
+        width: 250px;
+    }
+
+    #conteudo2-listra{
+        width: 40vh;
+        height: 2px;
+        
+    }
+    
     footer{
         flex-wrap: wrap;
         font-size: 8px;
@@ -334,12 +364,6 @@ footer{
         width: 25px;
     }
 
-    #conteudo2-listra{
-        width: 0px;
-        height: 0px;
-        
-    }
-    
     #conteudo2-divisao2-imagem {
         width: 100%;
     }
