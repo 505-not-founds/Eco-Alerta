@@ -24,10 +24,9 @@ header{
     flex-wrap: wrap;
     padding: 20px;
     border-bottom: 2px solid black;
-    position: fixed;  
+ 
     width: 100%;
     transition: color 0.3s;
-    z-index: 1000; 
 }
 header > h1{
     font-size: 50px;
