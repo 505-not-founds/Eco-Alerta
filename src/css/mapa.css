@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,16 +6,18 @@
 
 :root {
     --cor-primaria: white;
-    --sombra-letra:  1px 1px 1px black;
+    --sombra-letra: 1px 1px 1px black;
     --tipo-letra: "Roboto Condensed", sans-serif;
     --sombra-box: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
 
-html, body {
-    overflow-x: hidden; 
+html,
+body {
+    overflow-x: hidden;
 }
-header{
+
+header {
     background: rgb(4, 4, 58);
     display: flex;
     justify-content: space-between;
@@ -26,12 +28,13 @@ header{
     transition: color 0.3s;
 
 }
-header > h1{
+
+header>h1 {
     font-size: 50px;
     color: white;
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 50px;
     padding: 10px;
@@ -39,12 +42,12 @@ nav ul{
     padding-top: 20px;
 }
 
-nav ul li{
+nav ul li {
     list-style: none;
 }
 
-nav ul li a{
-    
+nav ul li a {
+
     padding: 10px 25px;
     border-radius: 10px;
     opacity: 0.8;
@@ -52,12 +55,134 @@ nav ul li a{
     color: aqua;
     font-size: 20px;
 }
-#cadastro{
+
+#cadastro {
     background: red;
 }
 
 nav ul :hover {
     transform: translateY(-5px);
     transition: transform 0.6s;
-    color: var( --cor-primaria);
+    color: var(--cor-primaria);
+}
+
+/* cpomeçando aqui o mapa */
+
+html {
+    background: rgb(200, 207, 207);
+}
+
+main {
+    padding-top: 35px;
+}
+
+#titulo-simulacao {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    font-size: 40px;
+    background: rgb(12, 131, 211);
+    color: white;
+    text-transform: uppercase;
+    width: 80%;
+    margin: 100px auto 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: var(--sombra-box);
+}
+
+#localiza {
+    background: white;
+    width: 80%;
+    box-shadow: var(--sombra-box);
+    margin: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#localiza>h2 {
+    font-size: 30px;
+}
+
+#mapa-container {
+    width: 100%;
+}
+
+#mapid {
+    width: 100%;
+    max-width: 800px;
+    height: 50vh;
+    border: 2px solid black;
+    margin: auto;
+}
+
+#temporal {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 800px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+#precipitacao {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    padding: 10px;
+    background: white;
+    border-left: 5px solid rgb(12, 131, 211);
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 600px) {
+    #mapid {
+        height: 60vh;
+    }
+
+    #titulo-simulacao {
+        width: 100%;
+        font-size: 20px;
+
+    }
+
+    #localiza {
+        width: 100%;
+    }
+
+    nav ul {
+
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+
+    header {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: static;
+
+    }
+
+    nav ul li a {
+        font-size: 15px;
+        gap: 10px;
+    }
+
 }

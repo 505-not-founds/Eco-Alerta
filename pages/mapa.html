@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/css/mapa.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"crossorigin=""/>
     <title>Mapa</title>
 </head>
 <body>
@@ -18,10 +19,40 @@
                 <li><a href="../pages/contato.html"> Contato</a></li>
                 <li><a href="../pages/mapa.html"> Mapa</a></li>
 
-                <li><a href="./pages/cadastro.html" id="cadastro"> Cadastro</a></li>
+                <li><a href="../pages/cadastro.html" id="cadastro"> Cadastro</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+
+        <div id="titulo-simulacao">
+            <h1>simulação</h1>
+        </div>
+
+        <div id="localiza">
+            <h2>Mapa de Localização</h2>
+
+            <section id="mapa-container">
+                <div id="mapid"></div>
+                <div id="localizacao">Clique no mapa para ver a localização</div>
+            </section>
+
+            <section id="temporal">
+                <div id="latlong"></div>
+                <div id="precipitacao">a precipitacao do dia:</div>
+
+            </section>
+
+        </div>
+
+    </main>
+    <!-- Chamando o JS da API -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"crossorigin=""></script>
+    <script src="../src/js/mapa.js"></script>
+    
+
+    </main>
 
     
 </body>
