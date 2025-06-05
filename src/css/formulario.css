@@ -10,23 +10,27 @@
     --tipo-letra: "Roboto Condensed", sans-serif;
 }
 
-html, body {
+html{
     overflow-x: hidden; 
+    background: rgb(200, 207, 207);
 }
+
 header{
     background: rgb(4, 4, 58);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 20px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid black; 
     width: 100%;
     transition: color 0.3s;
 
 }
 header > h1{
     font-size: 50px;
-    color: var(--cor-primaria);
+    color: var( --cor-primaria);
+    font-family: "Inter", sans-serif;
+    
 }
 
 nav ul{
@@ -45,24 +49,23 @@ nav ul li a{
     
     padding: 10px 25px;
     border-radius: 10px;
-    opacity: 0.8;
+    opacity: 0.8W;
     text-decoration: none;
     color: aqua;
     font-size: 20px;
 }
 
-html{
-    background: rgb(200, 207, 207);
+.botao-menu {
+    display: none;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: var(--cor-primaria);
+    cursor: pointer;
 }
 
 #cadastro{
     background: red;
-}
-
-nav ul :hover {
-    transform: translateY(-5px);
-    transition: transform 0.6s;
-    color: var( --cor-primaria);
 }
 
 
@@ -71,7 +74,7 @@ nav ul :hover {
     justify-content: center;
     align-items: center;
 
-    padding-top: 40px;
+    padding-top: 80px;
     
 }
 
@@ -195,21 +198,29 @@ nav ul :hover {
     text-align: center;
     position: static;
   }
-
-   nav ul {
+  nav ul {
        
-        display: flex;
-        gap: 30px;
-        justify-content: center;
+        display: none;
+        justify-content: space-between;
         flex-wrap: wrap;
+        align-items: center;
+        background-color: rgb(4, 4, 58);
+        width: 100%;
+        padding: 20px 0;
         
+    }
+    nav ul.show {
+        display: flex;
+    }
+
+    .botao-menu{
+        display: block;
     }
 
     header {
-        align-items: center;
+        align-items: start;
         flex-direction: column;
-        justify-content: center;
-        position: static;
+
 
     }
 
@@ -217,4 +228,5 @@ nav ul :hover {
         font-size: 15px;
         gap: 10px;
     }
+
 }

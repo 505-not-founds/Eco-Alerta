@@ -23,10 +23,9 @@ header{
     flex-wrap: wrap;
     padding: 20px;
     border-bottom: 2px solid black;
-    position: fixed;  
+
     width: 100%;
     transition: color 0.3s;
-    z-index: 1000; 
 }
 header > h1{
     font-size: 50px;
@@ -59,6 +58,16 @@ nav ul li a{
 #cadastro{
     background: red;
 }
+
+.botao-menu{
+    display: none;
+    font-size: 36px;
+    background: none;
+    border: none;
+    color: var(--cor-primaria);
+    cursor: pointer;
+}
+
 .logo{
     padding-bottom: 15px;
   
@@ -294,18 +303,27 @@ footer{
 
     nav ul {
        
-        display: flex;
-        gap: 30px;
-        justify-content: center;
+        display: none;
+        justify-content: space-between;
         flex-wrap: wrap;
+        align-items: center;
+        background-color: rgb(4, 4, 58);
+        width: 100%;
+        padding: 20px 0;
         
+    }
+    nav ul.show {
+        display: flex;
+    }
+
+    .botao-menu{
+        display: block;
     }
 
     header {
-        align-items: center;
+        align-items: start;
         flex-direction: column;
-        justify-content: center;
-        position: static;
+
 
     }
 
