@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-primaria: white;
+    --sombra-letra:  1px 1px 1px black;
+    --tipo-letra: "Roboto Condensed", sans-serif;
+    --sombra-box: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+html, body {
+    overflow-x: hidden; 
+}
+header{
+    background: rgb(4, 4, 58);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    border-bottom: 2px solid black;
+    width: 100%;
+    transition: color 0.3s;
+
+}
+header > h1{
+    font-size: 50px;
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+    padding: 10px;
+    transition-duration: 1s;
+    padding-top: 20px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    
+    padding: 10px 25px;
+    border-radius: 10px;
+    opacity: 0.8;
+    text-decoration: none;
+    color: aqua;
+    font-size: 20px;
+}
+#cadastro{
+    background: red;
+}
+
+nav ul :hover {
+    transform: translateY(-5px);
+    transition: transform 0.6s;
+    color: var( --cor-primaria);
+}
