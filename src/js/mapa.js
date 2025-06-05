@@ -35,7 +35,7 @@ function mapa(e) {
     let latlong = document.getElementById("latlong");
 
     // Supondo que 'lat' e 'long' já estejam definidos
-    latlong.innerHTML = `Latitude: ${lat}, Longitude: ${long}`;
+    latlong.innerHTML = `Latitude: ${lat} <br> Longitude: ${long}`;
 
     for (let i = 0; i < 13; i++) {
       const hora = "Daqui_" + [i] + " _horas";

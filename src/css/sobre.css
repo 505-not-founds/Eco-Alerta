@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+
 *{
     padding: 0;
     margin: 0;
@@ -8,6 +11,7 @@
     --cor-primaria: white;
     --sombra-letra:  1px 1px 1px black;
     --tipo-letra: "Roboto Condensed", sans-serif;
+    --tipo-letra2:"Shadows Into Light", cursive;
     --sombra-box: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
@@ -60,4 +64,80 @@ nav ul :hover {
     transform: translateY(-5px);
     transition: transform 0.6s;
     color: var( --cor-primaria);
+}
+
+html{
+    background: rgb(200, 207, 207);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 120px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+#titulo-sobre{
+    padding: 20px;
+    font-size: 40px;
+}
+
+.post-it{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+    max-width: 70%;
+    min-width: 70%;
+    margin: 0 auto;
+    background: #fff176;
+    padding: 30px;
+    box-shadow: var(--sombra-box);
+    gap: 20px;
+    padding-bottom: 150px;
+    font-family: var(--tipo-letra2);
+    font-size: 25px;
+}
+
+#titulo-emergencia{
+    font-size: 25px;
+}
+
+@media (max-width: 600px) {
+     nav ul {
+       
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+        flex-wrap: wrap;
+        
+    }
+
+    header {
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        position: static;
+
+    }
+
+    nav ul li a{
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    .post-it{
+        max-width: 95%;
+        padding-bottom: 50px;
+    }
+    #titulo-sobre{
+        font-size: 30px;
+    }
+
+
+    
 }
