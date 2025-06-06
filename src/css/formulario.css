@@ -10,9 +10,33 @@
     --tipo-letra: "Roboto Condensed", sans-serif;
 }
 
-html{
-    overflow-x: hidden; 
+#cores {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+    padding: 5px;
+    background: rgb(4, 4, 58);
+    color: white;
+    padding-right: 50px;
+}
+
+.cor{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+   
+}
+#cor1{
     background: rgb(200, 207, 207);
+}
+#cor2{
+    background: rgb(63, 63, 218);
+
+}
+#cor3{
+    background: rgb(199, 101, 117);
 }
 
 header{

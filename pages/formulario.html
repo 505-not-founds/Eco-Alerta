@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/css/formulario.css">
     <title>Quiz</title>
 </head>
+
 <body>
+    <div id="cores">
+
+        <input type="button" class="cor" onclick="trocar('rgb(200, 207, 207)')" id="cor1">
+        <input type="button" class="cor" onclick="trocar('rgb(63, 63, 218)')" id="cor2">
+        <input type="button" class="cor" onclick="trocar('rgb(199, 101, 117)')" id="cor3">
+    </div>
+
     <header>
         <h1 id="titulo">Eco alerta</h1>
         <button class="botao-menu" id="botao-menu">&#9776;</button>
@@ -23,7 +32,7 @@
         </nav>
     </header>
 
-     <main id="container-quiz">
+    <main id="container-quiz">
 
         <div class="quiz">
 
@@ -61,6 +70,7 @@
 
 
     <script src="../src/js/quiz.js"></script>
-    
+
 </body>
+
 </html>

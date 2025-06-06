@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/css/mapa.css">
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"crossorigin=""/>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" crossorigin="" />
     <title>Mapa</title>
 </head>
+
 <body>
+    <div id="cores">
+
+        <input type="button" class="cor" onclick="trocar('rgb(200, 207, 207)')" id="cor1">
+        <input type="button" class="cor" onclick="trocar('rgb(63, 63, 218)')" id="cor2">
+        <input type="button" class="cor" onclick="trocar('rgb(199, 101, 117)')" id="cor3">
+    </div>
+
 
     <header>
         <h1 id="titulo">Eco alerta</h1>
@@ -49,12 +58,13 @@
 
     </main>
     <!-- Chamando o JS da API -->
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" crossorigin=""></script>
     <script src="../src/js/mapa.js"></script>
-    
+
 
     </main>
 
-    
+
 </body>
+
 </html>

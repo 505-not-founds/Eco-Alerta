@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/css/cadastro.css">
     <title>Cadastro</title>
 </head>
+
 <body>
+    <div id="cores">
+
+        <input type="button" class="cor" onclick="trocar('rgb(200, 207, 207)')" id="cor1">
+        <input type="button" class="cor" onclick="trocar('rgb(63, 63, 218)')" id="cor2">
+        <input type="button" class="cor" onclick="trocar('rgb(199, 101, 117)')" id="cor3">
+    </div>
+
 
     <header>
         <h1 id="titulo">Eco alerta</h1>
@@ -33,9 +42,9 @@
                 <p>Vamos realizar seu cadastro,precisamos apenas de algumas informações:</p>
                 <p> <strong>informação pessoais</strong></p>
 
-                
+
                 <form id="contatos">
-                    
+
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
@@ -51,10 +60,10 @@
                     <div id="btn">
 
                         <label class="termos">
-                            <input type="checkbox" required >
+                            <input type="checkbox" required>
                             <p>Eu concordo em receber mensagens pelo telegram</p>
                         </label>
-                        
+
                         <button type="submit">Enviar</button>
                     </div>
 
@@ -65,6 +74,7 @@
 
         <script src="../src/js/cadastro.js"></script>
     </main>
-    
+
 </body>
+
 </html>
