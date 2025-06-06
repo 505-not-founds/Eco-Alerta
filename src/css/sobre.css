@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
 
 *{
     padding: 0;
@@ -16,6 +17,7 @@
     --cor-input-borda: #3f3fda;
     --sombra-letra: 1px 1px 1px #000;
     --tipo-letra: 'Roboto Condensed', sans-serif;
+    --tipo-letra2: 'Caveat', cursive;
     --sombra-box: 0 8px 16px rgba(0, 0, 0, 0.15);
     --background1: #e53935;
     --radius: 12px;
@@ -179,8 +181,9 @@ main{
     box-shadow: var(--sombra-box);
     gap: 20px;
     padding-bottom: 150px;
-    font-family: var(--tipo-letra2);
     font-size: 25px;
+    font-family: var(--tipo-letra2);
+
 }
 
 #titulo-emergencia{
