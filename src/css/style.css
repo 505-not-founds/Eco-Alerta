@@ -189,7 +189,7 @@ nav ul :hover {
     text-shadow: var(--sombra-letra);
 }
 
-#botao {
+#banner a {
     margin-top: 20px;
     padding: 20px 40px;
     border-radius: 10px;
