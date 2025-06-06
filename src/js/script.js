@@ -18,19 +18,19 @@ document.addEventListener("DOMContentLoaded", () => {
 // carregamento
 
 const imagens = [
-    'src/assets/enchente.webp',
-    'src/assets/enchente3.jpg',
-    'src/assets/enchente4.jpg',
-    'src/assets/enchente2.avif'
+    'src/assets/tecnologia1.gif',
+    'src/assets/tecnologia2.gif',
+    'src/assets/enchente1.jpg',
+    'src/assets/enchente2.jpg'
 ];
 
 let i = 0;
-const tempo = 100000;
+const tempo = 5000;
 
 function slideShowBanner() {
     const banner = document.getElementById('banner');
     if (!banner) return;
-
+""
     banner.style.backgroundImage = `url(${imagens[i]})`;
     i = (i + 1) % imagens.length;
 
