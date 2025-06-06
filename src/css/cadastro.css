@@ -65,11 +65,8 @@ header {
     flex-wrap: wrap;
     padding: 18px 32px;
     border-bottom: 2px solid #000;
-    position: fixed;
     width: 100%;
-    z-index: 1000;
     box-shadow: 0 2px 8px #0002;
-    /* Smoother, more immersive transition for background and overlay */
     transition: background 1.2s cubic-bezier(.4,0,.2,1), filter 1.2s cubic-bezier(.4,0,.2,1);
     overflow: hidden;
 }
@@ -96,13 +93,22 @@ header:hover, header:focus-within {
     filter: brightness(1.10) saturate(1.13);
 }
 
-header > h1 {
-    font-size: 2.5rem;
+header > #titulo{
+    font-size:20px;
     color: var(--cor-primaria);
     font-family: var(--tipo-letra);
     letter-spacing: 2px;
     text-shadow: var(--sombra-letra), 0 4px 24px #0006;
     transition: text-shadow 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+#titulo{
+    display: flex;
+    gap: 20px;
+}
+#titulo > img{
+    width: 80px;
+    height: 80px;
 }
 
 nav ul {
@@ -281,6 +287,10 @@ strong {
         padding: 12px 0px;
         gap: 18px;
         margin-top: 8px;
+        border-radius: 10px;
+    }
+     nav ul li{
+        padding: 20px;
     }
     nav ul.show {
         display: flex;

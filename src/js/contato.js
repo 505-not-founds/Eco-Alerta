@@ -11,3 +11,4 @@ toggle.addEventListener('click', () => {
 function trocar(cor){
     document.body.style.background=cor
 }
+
