@@ -5,88 +5,133 @@
 }
 
 :root {
-    --cor-primaria: white;
-    --sombra-letra:  1px 1px 1px black;
-    --tipo-letra: "Roboto Condensed", sans-serif;
-    --sombra-box: 0 8px 16px rgba(0, 0, 0, 0.3);
+    --cor-primaria: #fff;
+    --cor-secundaria: #04043a;
+    --cor-destaque: #3f3fda;
+    --cor-terciaria: #c76575;
+    --cor-botao: #e53935;
+    --cor-input-borda: #3f3fda;
+    --sombra-letra: 1px 1px 1px #000;
+    --tipo-letra: 'Roboto Condensed', sans-serif;
+    --sombra-box: 0 8px 16px rgba(0, 0, 0, 0.15);
+    --background1: #e53935;
+    --radius: 12px;
+    --transicao: 0.3s;
 }
-
 #cores {
     display: flex;
     align-items: center;
-    justify-content: end;
-    gap: 10px;
-    padding: 5px;
-    background: rgb(4, 4, 58);
-    color: white;
-    padding-right: 50px;
+    justify-content: flex-end;
+    gap: 12px;
+    padding: 8px 50px 8px 8px;
+    background: #04043a;
+    color: var(--cor-primaria);
 }
 
-.cor{
-    width: 30px;
-    height: 30px;
+.cor {
+    width: 28px;
+    height: 28px;
     border-radius: 50%;
     cursor: pointer;
-   
+    border: 2px solid #fff;
+    transition: box-shadow var(--transicao);
 }
-#cor1{
-    background: rgb(200, 207, 207);
-}
-#cor2{
-    background: rgb(63, 63, 218);
-
-}
-#cor3{
-    background: rgb(199, 101, 117);
+.cor:focus,
+.cor:hover {
+    box-shadow: 0 0 0 3px #fff4;
 }
 
-html, body {
-    overflow-x: hidden; 
-}
+#cor1 { background: #c8cfcf; }
+#cor2 { background: var(--cor-destaque); }
+#cor3 { background: var(--cor-terciaria); }
 
-header{
-    background: rgb(4, 4, 58);
+header {
+    background: linear-gradient(120deg, #04043a 60%, #1a1a3c 100%);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
-    border-bottom: 2px solid black;
+    padding: 18px 32px;
+    border-bottom: 2px solid #000;
     width: 100%;
-    transition: color 0.3s;
-
-}
-header > h1{
-    font-size: 50px;
-    color: var( --cor-primaria);
-    font-family: "Inter", sans-serif;
-    
+    box-shadow: 0 2px 8px #0002;
+    transition: background 1.2s cubic-bezier(.4,0,.2,1), filter 1.2s cubic-bezier(.4,0,.2,1);
+    overflow: hidden;
 }
 
-nav ul{
+header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(120deg, rgba(20,20,60,0.85) 60%, rgba(60,20,20,0.85) 100%);
+    opacity: 0;
+    transition: opacity 1.2s cubic-bezier(.4,0,.2,1);
+    filter: blur(0.5px) brightness(0.98);
+}
+
+header:hover::before,
+header:focus-within::before {
+    opacity: 1;
+}
+
+header:hover, header:focus-within {
+    background: linear-gradient(120deg, #23235a 0%, #b71c1c 100%);
+    filter: brightness(1.10) saturate(1.13);
+}
+
+header > #titulo{
+    font-size:20px;
+    color: var(--cor-primaria);
+    font-family: var(--tipo-letra);
+    letter-spacing: 2px;
+    text-shadow: var(--sombra-letra), 0 4px 24px #0006;
+    transition: text-shadow 0.7s cubic-bezier(.4,0,.2,1);
+}
+
+#titulo{
     display: flex;
-    gap: 50px;
-    padding: 10px;
-    transition-duration: 1s;
-    padding-top: 20px;
+    gap: 20px;
+}
+#titulo > img{
+    width: 80px;
+    height: 80px;
 }
 
-nav ul li{
+
+nav ul {
+    display: flex;
+    gap: 36px;
+    align-items: center;
     list-style: none;
+    transition: all var(--transicao);
 }
 
-nav ul li a{
-    
-    padding: 10px 25px;
-    border-radius: 10px;
-    opacity: 0.8W;
+nav ul li a {
+    display: block;
+    padding: 10px 22px;
+    border-radius: var(--radius);
     text-decoration: none;
-    color: aqua;
-    font-size: 20px;
-}
-#cadastro{
-    background: red;
+    color: #00ffff;
+    font-size: 1.1rem;
+    opacity: 0.9;
+    transition: background var(--transicao), color var(--transicao), transform var(--transicao), box-shadow 0.4s cubic-bezier(.4,0,.2,1);
+    font-weight: 500;
 }
 
+nav ul li a:hover,
+nav ul li a:focus {
+    background: #00ffff22;
+    color: var(--cor-primaria);
+    transform: translateY(-3px) scale(1.07);
+    box-shadow: 0 4px 18px #00ffff33;
+}
+
+#cadastro {
+    background: var(--background1);
+    color: var(--cor-primaria);
+}
 .botao-menu{
     display: none;
     font-size: 36px;
@@ -116,7 +161,7 @@ nav ul :hover {
     flex-direction: column;
     padding: 20px;
     max-width: 30%;
-    background: rgb(255, 255, 255);
+    background: rgb(231, 206, 206);
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
     gap: 20px;
@@ -244,35 +289,36 @@ nav ul :hover {
         border-top-right-radius: 0;
     }
 
+     header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 14px 16px;
+    }
+
+    .botao-menu {
+        display: block;
+        align-self: flex-end;
+    }
+
     nav ul {
-       
         display: none;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        align-items: center;
-        background-color: rgb(4, 4, 58);
+        flex-direction: column;
         width: 100%;
-        padding: 20px 0;
-        
+        background: var(--cor-secundaria);
+        padding: 12px 0;
+        gap: 18px;
+        margin-top: 8px;
+        border-radius: 10px;
+    }
+     nav ul li{
+        padding: 20px;
     }
     nav ul.show {
         display: flex;
     }
 
-    .botao-menu{
-        display: block;
+    nav ul li a {
+        font-size: 1rem;
+        padding: 10px 16px;
     }
-
-    header {
-        align-items: start;
-        flex-direction: column;
-
-
-    }
-
-    nav ul li a{
-        font-size: 15px;
-        gap: 10px;
-    }
-
 }

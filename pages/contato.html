@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../src/css/contato.css">
     <title>Contato</title>
 </head>
+
 <body>
+
+    <div id="cores">
+
+        <input type="button" class="cor" onclick="trocar('rgb(200, 207, 207)')" id="cor1">
+        <input type="button" class="cor" onclick="trocar('rgb(63, 63, 218)')" id="cor2">
+        <input type="button" class="cor" onclick="trocar('rgb(199, 101, 117)')" id="cor3">
+    </div>
+
     <header>
-        <h1 id="titulo">Eco alerta</h1>
+
+        <div id="titulo">
+            <h1>Eco alerta</h1>
+            <img src="../src/assets/logoEcoAlerta.png" alt="logo">
+        </div>
+
         <nav>
             <ul>
                 <li><a href="../index.html"> home</a></li>
@@ -28,31 +43,32 @@
 
             <section id="contato">
                 <h2>Entre em contato com a gente</h2>
-                <p>Tem alguma ideia, elogio ou reclamação? Manda aqui sua mensagem e nossa equipe da Eco Alerta vai te responder rapidinho.</p>
+                <p>Tem alguma ideia, elogio ou reclamação? Manda aqui sua mensagem e nossa equipe da Eco Alerta vai te
+                    responder rapidinho.</p>
 
                 <section id="redes-socias">
-                  <h2>Nossas redes:</h2>
-                  <a href=""><img src="../src/assets/facebook.png" alt=""></a>
-                  <a href=""><img src="../src/assets/instagram.png" alt=""></a>
-                  <a href=""><img src="../src/assets/telegram.png" alt=""></a>
+                    <h2>Nossas redes:</h2>
+                    <a href=""><img src="../src/assets/facebook.png" alt=""></a>
+                    <a href=""><img src="../src/assets/instagram.png" alt=""></a>
+                    <a href=""><img src="../src/assets/telegram.png" alt=""></a>
 
                 </section>
-    
+
             </section>
-    
+
             <section id="contato-conteudo">
-          
+
                 <form id="contatos">
-                    
+
                     <label for="nome">Nome:</label>
                     <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
 
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Digite seu email de contato" required>
-                    
+
                     <div id="texto">
 
-                        <textarea rows="7" placeholder="Sua mensagem" required ></textarea>
+                        <textarea rows="7" placeholder="Sua mensagem" required></textarea>
 
                     </div>
 
@@ -62,11 +78,12 @@
                     </div>
 
                 </form>
-    
+
             </section>
         </div>
 
     </main>
-    
+
 </body>
+
 </html>
