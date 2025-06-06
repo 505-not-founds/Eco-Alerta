@@ -314,8 +314,30 @@ nav ul :hover {
 }
 
 /* SEÇÃO 3 */
+#conteudo3{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+}
 
+/* SEÇÃO 4 */
 
+#conteudo4-texto{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+/* SEÇÃO 5 */
+
+/* SEÇÃO 6 */
+#conteudo6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 /* FOOOTERR */
 
